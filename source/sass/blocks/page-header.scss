@@ -1,0 +1,19 @@
+.page-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.page-header__logo-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 11px 20px 15px 11px;
+}
+
+.page-header__nav-toggle {
+  width: 19px;
+  height: 15px;
+
+  background-image: url('../img/icon-mobile-menu.svg');
+}

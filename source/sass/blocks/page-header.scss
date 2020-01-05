@@ -11,13 +11,6 @@
   padding: 11px 20px 15px 11px;
 }
 
-.page-header__nav-toggle {
-  width: 19px;
-  height: 15px;
-
-  background-image: url('../img/icon-mobile-menu.svg');
-}
-
 @media (min-width: $tabletWidth) {
   .page-header__container {
     display: flex;
@@ -39,6 +32,11 @@
     align-items: center;
 
     min-height: 160px;
+  }
+
+  .page-header_nav {
+    width: 62%;
+    max-width: 560px;
   }
 }
 

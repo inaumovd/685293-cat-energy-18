@@ -127,6 +127,8 @@
     align-items: center;
 
     min-height: 543px;
+
+    padding: 0 20px;
   }
 
   .features__list-item {
@@ -134,8 +136,9 @@
 
     position: relative;
 
-    width: 354px;
-    padding-right: 160px;
+    // width: 354px;
+    width: 245px;
+    // padding-right: 160px;
     padding-top: 117px;
 
     &:before {
@@ -174,6 +177,7 @@
 
   .features__description {
     padding: 0;
+    padding-right: 50px;
 
     font-size: 16px;
 

@@ -1,4 +1,6 @@
 .intro {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -10,6 +12,21 @@
 
   background-image: url('../img/index-background-mobile@1x.jpg');
   background-repeat: no-repeat;
+
+  &:after {
+    content: '';
+
+    position: absolute;
+    z-index: -1;
+
+    right: -111px;
+    top: -160px;
+
+    width: 720px;
+    height: 696px;
+
+    background-color: #68b738;
+  }
 }
 
 .intro__title {
@@ -28,4 +45,49 @@
   font-size: 14px;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+@media (min-width: $tabletWidth) {
+  .intro {
+    position: relative;
+
+    align-items: flex-start;
+
+    min-height: 600px;
+    padding: 0 120px;
+    padding-top: 70px;
+
+    background-image: none;
+  }
+
+  .intro__title {
+    margin-bottom: 33px;
+
+    font-size: 60px;
+    color: #111111;
+    text-align: left;
+  }
+
+  .intro__slogan {
+    margin-bottom: 48px;
+
+    color: #111111;
+    font-size: 20px;
+  }
+
+  .intro__image {
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .intro {
+    box-sizing: border-box;
+
+    max-width: 1220px;
+    padding-left: 0;
+    padding-right: 650px;
+    margin: 0 auto;
+  }
 }

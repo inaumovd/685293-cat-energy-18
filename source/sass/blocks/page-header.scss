@@ -17,3 +17,38 @@
 
   background-image: url('../img/icon-mobile-menu.svg');
 }
+
+@media (min-width: $tabletWidth) {
+  .page-header__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .page-header__logo-wrapper {
+    padding: 0;
+  }
+
+  .page-header {
+    padding: 0 30px;
+
+    border: none;
+  }
+
+  .page-header__container {
+    align-items: center;
+
+    min-height: 160px;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .page-header {
+    padding: 0;
+  }
+
+  .page-header__container {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+}

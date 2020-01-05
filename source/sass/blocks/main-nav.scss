@@ -24,3 +24,36 @@
 
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+@media (min-width: $tabletWidth) {
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main-nav__item {
+    margin-right: 36px;
+
+    border-top: none;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .main-nav__item-link {
+    font-size: 18px;
+    line-height: 1.39;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .main-nav__item-link {
+    color: #ffffff;
+    font-size: 20px;
+  }
+
+  .main-nav__item-link--black {
+    color: #111111;
+  }
+}

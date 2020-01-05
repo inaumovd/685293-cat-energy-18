@@ -110,3 +110,94 @@
     background-image:url('../img/icon-right-arrow-long.svg');
   }
 }
+
+
+@media (min-width: $tabletWidth) and (max-width: $desktopWidth) {
+  .programms {
+    padding: 0 30px;
+  }
+
+  .programms__item {
+    padding: 81px 285px 62px 52px;
+  }
+
+  .programms__item-title {
+    padding: 0;
+
+    font-size: 36px;
+
+    &:before {
+      left: auto;
+      right: -238px;
+
+      width: 200px;
+      height: 200px;
+
+      border-radius: 50%;
+      background-color: #68b738;
+    }
+  }
+
+  .programms__item-description {
+    margin-bottom: 61px;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    border: none;
+  }
+
+  .programms__item-link {
+    font-size: 20px;
+  }
+
+  .programms__item-title--loss {
+    &:after {
+      width: 140px;
+      height: 194px;
+
+      left: auto;
+      right: -221px;
+
+      background-image:url('../img/icon-cat-slim.svg');
+    }
+  }
+
+  .programms__item-title--gain {
+    &:after {
+      width: 268px;
+      height: 112px;
+
+      left: auto;
+      right: -264px;
+      top: 40px;
+
+      background-image:url('../img/icon-cat-pro.svg');
+    }
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .programms {
+    padding: 0 110px;
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+
+  .programms__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  .programms__item {
+    box-sizing: border-box;
+    flex-basis: 570px;
+    margin-bottom: 0;
+  }
+
+  .programms__item-description {
+    border-bottom: 0;
+  }
+}

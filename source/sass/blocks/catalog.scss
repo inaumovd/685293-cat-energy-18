@@ -42,3 +42,56 @@
   line-height: 1.33;
   color: #444444;
 }
+
+@media (min-width: $tabletWidth) {
+  .catalog {
+    padding: 0 30px;
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .catalog__list-item {
+    margin-top: 140px;
+  }
+
+  .catalog__more {
+    box-sizing: border-box;
+
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 324px;
+    padding: 0 38px 40px 38px;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .catalog__more-slogan {
+    margin-bottom: 85px;
+
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .catalog__more-title {
+    margin-bottom: 28px;
+
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .catalog {
+    padding: 0;
+  }
+
+  .catalog__more {
+    width: 245px;
+  }
+}

@@ -5,3 +5,17 @@
 .page-main__programms {
   margin-bottom: 15px;
 }
+
+@media (min-width: $desktopWidth) {
+  .page-main__intro {
+    margin-bottom: 82px;
+  }
+
+  .page-main__programms {
+    margin-bottom: 80px;
+  }
+
+  .page-main__features {
+    margin-bottom: 90px;
+  }
+}

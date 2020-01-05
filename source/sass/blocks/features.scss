@@ -15,7 +15,12 @@
 }
 
 .features__list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   margin-bottom: 20px;
+  min-height: 60px;
 }
 
 .features__description {
@@ -33,7 +38,7 @@
 
     position: absolute;
     left: 0;
-    top: 0;
+    top: -20px;
 
     width: 60px;
     height: 60px;
@@ -48,7 +53,7 @@
 
     position: absolute;
     left: 6px;
-    top: 5px;
+    top: -15px;
 
     width: 40px;
     height: 40px;
@@ -63,7 +68,7 @@
 
     position: absolute;
     left: 6px;
-    top: 5px;
+    top: -15px;
 
     width: 40px;
     height: 40px;
@@ -78,7 +83,7 @@
 
     position: absolute;
     left: 6px;
-    top: 5px;
+    top: -15px;
 
     width: 40px;
     height: 40px;
@@ -93,11 +98,118 @@
 
     position: absolute;
     left: 6px;
-    top: 5px;
+    top: -15px;
 
     width: 40px;
     height: 40px;
 
     background-image:url('../img/advantage-clock@1x.png');
+  }
+}
+
+@media (min-width: $tabletWidth) {
+  .features {
+    padding: 0 30px;
+  }
+
+  .features__title {
+    font-size: 60px;
+    line-height: 60px;
+
+    margin-bottom: 80px;
+  }
+
+  .features__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    min-height: 543px;
+  }
+
+  .features__list-item {
+    box-sizing: border-box;
+
+    position: relative;
+
+    width: 354px;
+    padding-right: 160px;
+    padding-top: 117px;
+
+    &:before {
+      position: absolute;
+      right: 173px;
+      top: 79px;
+
+      font-size: 249px;
+      color: rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .features__list-item--natur {
+    &:before {
+      content: '1';
+    }
+  }
+
+  .features__list-item--powder {
+    &:before {
+      content: '2';
+    }
+  }
+
+  .features__list-item--change {
+    &:before {
+      content: '3';
+    }
+  }
+
+  .features__list-item--result {
+    &:before {
+      content: '4';
+    }
+  }
+
+  .features__description {
+    padding: 0;
+
+    font-size: 16px;
+
+    &:before {
+      left: 0;
+      top: -117px;
+
+      width: 80px;
+      height: 80px;
+    }
+
+    &:after {
+      top: -95px;
+    }
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .features {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .features__title {
+    margin-bottom: 63px;
+  }
+
+  .features__list {
+    justify-content: space-between;
+
+    min-height: auto;
+  }
+
+  .features__list-item {
+    width: 245px;
+    padding-right: 0px;
   }
 }

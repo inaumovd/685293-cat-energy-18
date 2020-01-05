@@ -54,3 +54,38 @@
   width: 17px;
   height: 17px;
 }
+
+@media (min-width: $tabletWidth) {
+  .page-footer {
+    flex-direction: row;
+
+    min-height: 150px;
+  }
+
+  .page-footer__social-list {
+    padding: 0;
+
+    width: auto;
+
+    border: none;
+  }
+
+  .page-footer__info-wrapper {
+    flex-grow: 0;
+    justify-content: flex-end;
+
+    width: auto;
+  }
+
+  .page-footer__social-icon {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .page-footer {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}

@@ -11,6 +11,14 @@
 
   background-color: #68b738;
   border: none;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .button--grey {

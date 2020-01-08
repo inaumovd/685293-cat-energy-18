@@ -97,12 +97,30 @@
   text-transform: uppercase;
   color: #111111;
 
+  &:hover {
+    &:before {
+      width: 34px;
+
+      background-image:url('../img/icon-right-arrow-verylong.svg');
+    }
+  }
+
+  &:active {
+    &:before {
+      width: 34px;
+
+      background-image:url('../img/icon-right-arrow-verylong.svg');
+    }
+
+    opacity: 0.3;
+  }
+
   &:before {
     content: '';
 
     position: absolute;
-    right: 0;
-    top: 7px;
+    left: 103px;
+    top: 8px;
 
     width: 26px;
     height: 12px;
